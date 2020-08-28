@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS objekter</title>
+
+</head>
+
+<body>
+
+    <article id="dyr">
+        <h3></h3>
+        <p></p>
+        <p></p>
+        <img src="" alt="">
+
+    </article>
+
+
+
+
+    <script>
+        //øvelse 2 (objekter)
+
+        document.addEventListener("DOMContentLoaded", start);
+
+        function start() {
+            console.log("start");
+        }
+
+
+
+
+        //øvelse 1 (objekter)
+        let dyr = {
+            "navn": "Gris",
+            "type": "Pattedyr",
+            "levested": "Svinesti",
+            "billede": "http//mabe_kea-dk/E19/pics/pic.png"
+        }
+
+        console.log(`Dyr: ${dyr.navn} type: ${dyr.type}`);
+
+        const destination = document.querySelector("#dyr");
+        const navn = `${dyr.navn}`;
+        const type = `${dyr.type}`;
+        const levested = `${dyr.levested}`;
+        const billede = `${dyr.billede}`;
+
+        destination.querySelector("h3").textContent = navn;
+        destination.querySelector("p").textContent = dyr.type;
+        destination.querySelector("p").textContent = dyr.levested;
+        destination.querySelector("img").scr = dyr.billede;
+
+    </script>
+</body>
+
+</html>

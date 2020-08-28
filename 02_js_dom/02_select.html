@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML struktur øvelse</title>
+    <link rel="stylesheet" href="html_struktur.css">
+</head>
+
+<body>
+    <header>
+        <h1>Titel</h1>
+    </header>
+    <main>
+       <h3>Undertitel</h3>
+        <section>
+            <article> <img src="84180470_281413126169708_7832377995359682560_n.jpg" alt="foto">
+            <h5>Article 1</h5>
+            <p>Det er en kendsgerning, at man bliver distraheret af læsbart indhold på en side, når man betragter dens layout. Meningen med at bruge Lorem Ipsum er, at teksten indeholder mere eller mindre almindelig tekstopbygning i modsætning til "Tekst her - og mere tekst her", mens det samtidigt ligner almindelig tekst. Mange layoutprogrammer og webdesignere bruger Lorem Ipsum som fyldtekst. En søgning på Lorem Ipsum afslører mange websider, som stadig er på udviklingsstadiet. Der har været et utal af variationer, som er opstået enten på grund af fejl og andre gange med vilje (som blandt andet et resultat af humor).</p>
+            </article>
+            <article> <img src="Billede26.06.202013.41.29.jpg" alt="foto">
+            <h5>Article 2</h5>
+            <p>Det er en kendsgerning, at man bliver distraheret af læsbart indhold på en side, når man betragter dens layout. Meningen med at bruge Lorem Ipsum er, at teksten indeholder mere eller mindre almindelig tekstopbygning i modsætning til "Tekst her - og mere tekst her", mens det samtidigt ligner almindelig tekst. Mange layoutprogrammer og webdesignere bruger Lorem Ipsum som fyldtekst. En søgning på Lorem Ipsum afslører mange websider, som stadig er på udviklingsstadiet. Der har været et utal af variationer, som er opstået enten på grund af fejl og andre gange med vilje (som blandt andet et resultat af humor).</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Footertekst</p>
+    </footer>
+
+
+
+
+
+
+
+    <script>
+        const overskrift = document.querySelector("h1");
+        overskrift.textContent;
+        console.log(overskrift.textContent);
+
+        const underoverskrift = document.querySelector("h3");
+        underoverskrift.textContent;
+        console.log(underoverskrift.textContent);
+
+        const art1 = document.querySelector("article:first-child");
+        art1.textContent;
+        console.log(art1.textContent);
+
+        const art2 = document.querySelector("article:nth-child(2)");
+        art2.textContent;
+        console.log(art2.textContent);
+
+
+
+
+
+    </script>
+</body>
+</html>

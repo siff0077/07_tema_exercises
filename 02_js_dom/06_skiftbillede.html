@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML struktur øvelse</title>
+<link rel="stylesheet" href="html_struktur.css">
+</head>
+
+<body>
+    <header>
+        <h1>Titel</h1>
+    </header>
+    <main>
+        <h3>Undertitel</h3>
+        <section>
+            <article> <img src="84180470_281413126169708_7832377995359682560_n.jpg" alt="foto">
+                <h5>Article 1</h5>
+                <p>Det er en kendsgerning, at man bliver distraheret af læsbart indhold på en side, når man betragter dens layout. Meningen med at bruge Lorem Ipsum er, at teksten indeholder mere eller mindre almindelig tekstopbygning i modsætning til "Tekst her - og mere tekst her", mens det samtidigt ligner almindelig tekst. Mange layoutprogrammer og webdesignere bruger Lorem Ipsum som fyldtekst. En søgning på Lorem Ipsum afslører mange websider, som stadig er på udviklingsstadiet. Der har været et utal af variationer, som er opstået enten på grund af fejl og andre gange med vilje (som blandt andet et resultat af humor).</p>
+            </article>
+            <article> <img src="Billede26.06.202013.41.29.jpg" alt="foto">
+                <h5>Article 2</h5>
+                <p>Det er en kendsgerning, at man bliver distraheret af læsbart indhold på en side, når man betragter dens layout. Meningen med at bruge Lorem Ipsum er, at teksten indeholder mere eller mindre almindelig tekstopbygning i modsætning til "Tekst her - og mere tekst her", mens det samtidigt ligner almindelig tekst. Mange layoutprogrammer og webdesignere bruger Lorem Ipsum som fyldtekst. En søgning på Lorem Ipsum afslører mange websider, som stadig er på udviklingsstadiet. Der har været et utal af variationer, som er opstået enten på grund af fejl og andre gange med vilje (som blandt andet et resultat af humor).</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Footertekst</p>
+    </footer>
+
+
+
+
+
+
+
+    <script>
+
+    //øvelse 5
+        document.addEventListener("DOMContentLoaded", start);
+
+        function start(){
+        console.log("start");
+
+
+
+
+
+    //øvelse 2A
+        /*const overskrift = document.querySelector("h1");
+        overskrift.textContent;
+        overskrift.textContent = "noget andet";
+        console.log(overskrift.textContent);
+
+        const underoverskrift = document.querySelector("h3");
+        underoverskrift.textContent;
+        console.log(underoverskrift.textContent);*/
+
+
+
+
+
+     //øvelse 2B
+        /*const art1 = document.querySelector("article:first-child p");
+        art1.textContent;
+        art1.textContent = "blablabla";
+        console.log(art1.textContent);
+
+        const art2 = document.querySelector("article:nth-child(2) p");
+        art2.innerHTML;
+        art2.innerHTML = "bla<b>bla</b>bla";
+        console.log(art2.textContent);*/
+
+
+
+
+     //øvelse 3
+        const art1foto = document.querySelector("article:nth-child(1) img");
+        console.log(art1foto);
+        art1foto.src = "foto1.JPG";
+        art1foto.alt = "nyt billede 1";
+
+        const art2foto = document.querySelector("article:nth-child(2) img");
+        console.log(art2foto);
+        art2foto.src = "foto2.JPG";
+        art2foto.alt = "nyt billede 2";
+
+
+
+
+     //øvelse 4
+        let mainSection = document.querySelector("section");
+
+        //nyt article element
+        let newArticle = document.createElement("article");
+
+        //ny H# element
+        let overskrift = document.createElement("h5");
+
+        //text til overskriften
+        let overskriftTekst = document.createTextNode("Article 3");
+
+        //ny p element
+        let tekst = document.createElement("p");
+
+        //text til overskriften
+        let tekstTekst = document.createTextNode("Det er en kendsgerning, at man bliver distraheret af læsbart indhold på en side, når man betragter dens layout. Meningen med at bruge Lorem Ipsum er, at teksten indeholder mere eller mindre almindelig tekstopbygning i modsætning til Tekst her - og mere tekst her, mens det samtidigt ligner almindelig tekst. Mange layoutprogrammer og webdesignere bruger Lorem Ipsum som fyldtekst. En søgning på Lorem Ipsum afslører mange websider, som stadig er på udviklingsstadiet. Der har været et utal af variationer, som er opstået enten på grund af fejl og andre gange med vilje (som blandt andet et resultat af humor).");
+
+        //Nyt img element
+        let img = document.createElement("img");
+
+        //foto til nyt img element
+        img.setAttribute("src", "foto3.JPG");
+
+        //tilføj foto til article 3
+        newArticle.appendChild(img);
+
+        //indsæt tekst i overskrift
+        overskrift.appendChild(overskriftTekst);
+
+        //tilføj overskrift til article
+        newArticle.appendChild(overskrift);
+
+        //Indsæt tekst i p
+        tekst.appendChild(tekstTekst);
+
+        //Indsæt tekst i article
+        newArticle.appendChild(tekst);
+
+        //tilføj article til section
+        mainSection.appendChild(newArticle);
+
+
+  }
+
+    //øvelse 6
+         document.addEventListener("click", skiftFoto);
+
+            function skiftFoto(){
+            const art1foto = document.querySelector("article:nth-child(1) img");
+            console.log(art1foto);
+            art1foto.src = "https://placeimg.com/640/480/any", math.round(Math.random() *10);
+            art1foto.alt = "tilfældigt foto";
+            }
+
+
+
+
+    </script>
+</body>
+
+</html>

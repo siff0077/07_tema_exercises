@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js_ovelse 09</title>
+
+    <style>
+        body {
+            color: teal;
+        }
+
+
+        #display{
+            width: 50vw;
+            height:30vw;
+            border: 1px solid aquamarine;
+            margin: 7vw;
+            padding: 1vw;
+        }
+    </style>
+</head>
+
+
+
+
+
+<body>
+   <div id="display"></div>
+
+
+
+
+    <script>
+        let playlist = ["Netsujo No Spectrum", "Where You Are", "A Dream Is A Wish Your Heart Makes", "He Mele No Lilo", "Remember Me", "The Second Star To The Right", "Circles", "avf", "Let's Do It Again", "Back To You"];
+
+        playlist.forEach(sang => {
+            document.querySelector("#display").innerHTML += `${sang} <br>`;
+        })
+
+
+
+
+    </script>
+</body>
+</html>
